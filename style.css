@@ -2,11 +2,33 @@ body{
     font-family: Arial ,sans-serif;
     margin: 20 px;
     background-color: #ea725e;
+    background-size: cover;
 }
 
 header{
+    position: relative;
+ 
     background-color: #f8f9fa;
     padding: 10px;
+}
+
+h1 {
+    font-size: 32px;       
+    font-weight: bold;       
+    text-align: center;      
+}
+
+.category{
+    top: 20px;
+    border: 2px solid #333;   
+    border-radius: 5px; 
+}
+
+.featured{
+    margin: 20px;         
+    padding: 10px;          
+    width: 80%;             
+    height: auto;  
 }
 
 .featured img{
