@@ -7,7 +7,7 @@ body{
 
 header{
     position: relative;
- 
+
     background-color: #f8f9fa;
     padding: 10px;
 }
@@ -22,6 +22,10 @@ h1 {
     top: 20px;
     border: 2px solid #333;   
     border-radius: 5px; 
+}
+
+.category h2{
+    left: 10px;
 }
 
 .featured{
@@ -88,4 +92,88 @@ footer {
     font-weight: 600;
     text-decoration: none;
   }
-  
+
+  .animated-checkbox input {
+    display: none;
+}
+
+.animated-checkbox span {
+    cursor: pointer;
+    padding-left: 20px;
+    position: relative;
+}
+
+.animated-checkbox span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #333;
+    background-color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.animated-checkbox input:checked + span::before {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+
+
+.img_cont {
+    display: inline-block;
+    position: relative;
+}
+
+.img_cont img {
+    transition: 0.5s ease;
+}
+
+.img_cont:hover img {
+    opacity: 0.3;
+}
+
+.nav-link {
+    padding-left: 20px;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #f7d959; 
+    transform: scale(1.1); 
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #f7d959;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link:focus::after {
+    width: 100%; 
+}
+
+
+.overlay{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
